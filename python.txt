@@ -1,0 +1,210 @@
+Pyton
+=====
+
+# We use pip to install modules(libraries) like => pip install opencv-python
+
+
+# Data types or how store date in variable
+==========================================
+
+x = "Hello World"	                          str	
+x = 20	                                          int	
+x = 20.5	                                  float	
+x = 1j	                                          complex	
+x = ["apple", "banana", "cherry"]	          list	
+x = ("apple", "banana", "cherry")	          tuple	
+x = range(6)	                                  range	
+x = {"name" : "John", "age" : 36}	          dict	
+x = {"apple", "banana", "cherry"}	          set	
+x = frozenset({"apple", "banana", "cherry"})	  frozenset	
+x = True	                                  bool	
+x = b"Hello"	                                  bytes	
+x = bytearray(5)	                          bytearray	
+x = memoryview(bytes(5))	                  memoryview	
+x = None	                                  NoneType
+
+Rules
+=======
+Variable should start from a letter or under score.
+variable can not start with number
+  $$  Mostly same as java sscript $$
+
+we can not add string with number => print("yes"+2);
+
+
+==================================================================
+
+# operators
+==============
+
+*, /, +, -, //, **, %
+
+
+==================================================================
+type casting
+============
+
+e="31"
+f=int(e)  <= type casting
+print(f+2);
+ # Like above example we can type cast in other data types also  
+
+
+syntax
+=================================================================================
+# print(" hello world");
+
+# ===> If we use 3 cotes on string then it print rest as it is as input given by us. Example below
+
+name='''code
+like this '''
+print(name);
+
+output in console
+==================
+code
+like this
+
+==========================================================
+
+# In single quatation we can not write more then one word. Only one word are allowed.
+
+# name= "rajaa"
+
+1) print(name[0]) => output==> r
+2) print(name[2,5]) =>output==> jaa
+3) print(name.strip()); <== it will remove all extra space in starting and ending
+4) print(len(name)); <= it print length of string;
+
+5) name.lower() or name.upper() will do all letter in lower or in uppercase respectively.
+
+6) temp=name.replace("r","t") <=it will replace r with t and store that value to temp variable.
+
+7) str1 ="R"
+   str2="aaj"    
+print(str1+st2)  => Raj (output)
+
+8) temp= " This is {} important for {} " .format("very","test");
+print(temp);
+  (output)=> This is very important for test
+
+detail => by default at first place{} there is written like {0} and at 2nd palce {1}
+ if we assign 1st place as {1} and 2nd place as {0} then at 1st place it show "test"
+ and 2nd place "very"
+
+
+## below example is modified and easy then above;
+
+9) name1="rj"
+   name2="raj"
+temp= f"This is{name1} and name is {name2}"
+print(temp);
+
+
+============================================================ 1 hour 1 mint
+collections
+===========
+
+# In video methods for Insert,delete are shown. I am only writting way of declaring. 
+
+1) List        => lst=[1,2,3,4]
+
+2) Tuple       => tup=("Raj","harry")
+
+3) Set         => s={2,3,3,5,6}
+
+4) Dictionary  => obj={
+                       "code with" : "harry",
+                        "marks"    :100
+                      }
+
+================================================================1 hour 21 minuts
+
+Condional statements
+====================
+
+age = input("Enter your age \n")    <== It take input from user
+
+if(age>18):
+  print("you can get license"
+
+elif(age==18):
+  print("wait for one year for license");
+
+else:
+  print("You can not get license");
+
+: <== this is called indend
+
+===================================================== 1 hour 27 min
+
+Loops
+========
+
+1) For loops
+==============
+
+eample1
+========
+for i in range(0,1000):
+   print(i);
+
+example2
+=========
+lst=[1,2,3,4,5]
+
+for index in lst:
+   print(item);
+
+
+
+2) While Loop
+==============
+ 
+example 1
+=========
+i=0
+  while(i<100):
+    i= i+1
+   if i== 78:
+     countinue 
+
+   print(i)
+  
+  
+===================================================================== 1:33:00
+
+functions
+==========
+
+ def greet():
+  print("good moring sir")
+
+
+
+  def sum(a,b):
+  c= a + b
+  return c
+
+ def sum(a=65,b,c):     <=== here while calling if we did not pass any thing on place of a  then it take 65 as default
+  return a+b+c
+=================================================================== 1:38:00
+
+Object Oriented programming
+============================
+
+class Employee :
+
+  def __init__(self,name,salary):
+     self.name=name
+     self.salary=salary
+
+detail=Employee("harry",34);
+print(detail.name)
+print(detail.salary)
+
+
+
+
+
+
