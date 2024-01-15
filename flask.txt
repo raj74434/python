@@ -1,0 +1,97 @@
+Flask
+========
+
+# virtualenv masaiHome
+or
+# mkvirtualenv masaiHome  <==== terminal command
+
+# It create a virtual environment. We need virtual environment because in computer we can only intall only one type type of
+  or version of package. So if we create different environment then for every project or environment 
+  we can install different verion of package.
+
+# .\masaiHome\Scripts\activate.ps1  <==activate that environment or select that environment
+
+# pip install flask <== it install flask
+
+
+# python .\projectName.py  <=== run the application on server.we caan also run app from button given in vs code
+
+
+======================================== 18 minute
+
+There are 2 types of directories 
+1) static
+2) Template
+
+1) Static help in getting file as it is written in file which present in that folder.
+
+# access like => http://127.0.0.1:8001/static/folder2.txt
+
+2) Template folder help in add html or other types of files.
+
+# we use render template to return a html file.
+
+
+========================================= 24 minute
+
+Started to create a web page with the help of boot strap
+
+========================================= 37 minutes
+
+Setup a data base
+===================
+1) pip install flask-sqlalchemy  <== help in get data base
+
+2) from flask_sqlaalchemy import SQLAlchemy
+
+3) Intialize                      (here we choose type of database, here we use sql lite but we can choose my sql also)
+                                                     |
+  i) app.config['SQLALCHEMY_DATAABASE_URI'] = "sqlite:///masai.db"
+ ii)app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+iii) db=SQLAlchemy(app)
+
+
+4) Now with the help of class we design a data base schema.
+
+class Todo(db.Model):
+  sno           =db.column(db.Integer, primary_key=True)
+  title         =db.Column(db.String(200),nullable=False)
+  desc          =db.Column(db.String(200),nullable=False)
+  date_created  =db.column(db.DateTime,default=datetime.utcnow)
+
+  def __repr__(self) -> str:
+    return f"{self.sno} & {self.title} & {self.date_created}"
+
+
+## For date time we have to import 
+eg ===> from datetime import datetime
+
+=============================================  44 min
+
+In terminal
+===========
+1) python
+2) from app import db
+3) db.create_all()
+4) exit()
+
+# After following above steps a file is created. If we want to check
+data present in that file then we can google sqllite viewer
+and upload that file.
+
+
+# We see in official documentation . ====> 46 min
+ 
+ #flask --app app run    <================================================ run the flak app
+
+
+
+
+
+=================================================================== test video started =============================================================
+
+
+
+
+
+
